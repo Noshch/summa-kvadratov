@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+double n, a, b;
+int i, j;
+bool M;
+int main()
+
+{
+    M=false;
+    cin >> n;
+  //  cout <<n<< "\n";
+        for(i=1; i<(n/2); i++){
+                for(j=1; j<(n/2); j++){
+                //    cout <<n<<" "<< i <<" "<< j << " "<< endl;
+                    if (i==j) {continue;}
+                    if ((i*i)+(j*j)==n)
+                           {
+                               cout << "i=" << i << "\n" << "j=" << j <<endl;
+                                M=true;
+                           }
+                                           }
+        }
+        if (!M) {cout <<"chisel net";}
+        return 0;
+}
